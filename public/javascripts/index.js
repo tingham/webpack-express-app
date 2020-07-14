@@ -1,3 +1,5 @@
+const Dog = require("./dog.js")
+
 let backgroundColor = document.body.style.background = "orange"
 
 addElement()
@@ -12,4 +14,9 @@ function addElement() {
 
     let originalHeading = document.getElementsByTagName('h1')[0]
     document.body.insertBefore(newHeading, originalHeading)
+
+  // document.body.addEventListener('onclick', function () {
+    let some_dog = new Dog()
+    some_dog.bark()
+  //})
 }
