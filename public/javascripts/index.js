@@ -1,14 +1,22 @@
-var backgroundColor = document.body.style.background = "orange";
-addElement();
+const Dog = require("./dog.js")
+
+let backgroundColor = document.body.style.background = "orange"
+
+addElement()
 
 
 function addElement() {
-    var newHeading = document.createElement('h1');
+    let newHeading = document.createElement('h1')
 
-    var newContent = document.createTextNode("Hello World!");
+    let newContent = document.createTextNode("Hello World!")
 
-    newHeading.appendChild(newContent);
+    newHeading.appendChild(newContent)
 
-    var originalHeading = document.getElementsByTagName('h1')[0];
-    document.body.insertBefore(newHeading, originalHeading);
+    let originalHeading = document.getElementsByTagName('h1')[0]
+    document.body.insertBefore(newHeading, originalHeading)
+
+  // document.body.addEventListener('onclick', function () {
+    let some_dog = new Dog()
+    some_dog.bark()
+  //})
 }
