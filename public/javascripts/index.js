@@ -1,3 +1,5 @@
+import "../stylesheets/style.css"
+
 const Dog = require("./dog.js")
 
 let backgroundColor = document.body.style.background = "orange"
@@ -18,5 +20,5 @@ function addElement() {
     // document.body.addEventListener('onclick', function () {
     let some_dog = new Dog()
     some_dog.bark()
-    //})
+    // })
 }
