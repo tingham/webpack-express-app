@@ -1,14 +1,14 @@
-var backgroundColor = document.body.style.background = "orange";
+let backgroundColor = document.body.style.background = "orange";
 addElement();
 
 
 function addElement() {
-    var newHeading = document.createElement('h1');
+    let newHeading = document.createElement('h1');
 
-    var newContent = document.createTextNode("Hello World!");
+    let newContent = document.createTextNode("Hello World!");
 
     newHeading.appendChild(newContent);
 
-    var originalHeading = document.getElementsByTagName('h1')[0];
+    let originalHeading = document.getElementsByTagName('h1')[0];
     document.body.insertBefore(newHeading, originalHeading);
 }
