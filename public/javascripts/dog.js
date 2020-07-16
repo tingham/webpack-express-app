@@ -1,11 +1,10 @@
-class Dog {
-  constructor () {
+export default class Dog {
+  constructor() {
   }
 
-  bark () {
+
+  bark() {
     window.alert("Bork bork bork")
   }
 }
-
-module.exports = Dog
 
